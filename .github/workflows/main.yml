@@ -23,7 +23,7 @@ jobs:
         with:
           context: ./src
           push: true
-          file: ./scr/Dockerfile
+          file: ./src/Dockerfile
           tags: |
             rolesosi/fake-shop:latest
             rolesosi/fake-shop:v${{github.run_number}}
