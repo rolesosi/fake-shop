@@ -47,9 +47,6 @@ jobs:
 
       - name: Configuraro kubectl
         run: aws eks update-kubeconfig --name aula-k8s
-
-      - name: Fake Deploy dos manifestos no Kubernetes
-        run: echo "Executando o comando kubectl apply" 
         
       - name: Deploy dos manifestos no Kubernetes
         uses: Azure/k8s-deploy@v5
