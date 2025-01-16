@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: fedora-latest
     steps:
       
       - name: Obter o codigo do projeto
