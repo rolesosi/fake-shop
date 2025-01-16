@@ -34,7 +34,7 @@ jobs:
       - name: Obter o codigo do projeto
         uses: actions/checkout@v4
       - name: Autenticar na AWS
-        uses: aws-actions/configure_aws_credentials@v4
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-acess-key-id: ${{secrets.AWS_ACESS_KEY_ID}}
           aws-acess-access-key: ${{secrets.AWS_ACESS_ACCESS_KEY}}
