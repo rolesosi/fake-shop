@@ -37,7 +37,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-acess-key-id: ${{secrets.AWS_ACESS_KEY_ID}}
-          aws-acess-access-key: ${{secrets.AWS_ACESS_ACCESS_KEY}}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: us-east-1
       - name: Configuraro kubectl
         run: echo "Executandoo o comando aws eks update-kubeconfig"
